@@ -21,4 +21,4 @@ Un formulaire de connexion et d'inscription animé qui permet aux utilisateurs d
 
 ## Contribution
 
-Si vous souhaitez contribuer à ce projet, n'hésitez pas à forker le répertoire et à soumettre une pull request. Toute contribution est la bienvenue!
+Les contributions sont les bienvenues ! Veuillez créer une issue ou une pull request pour toute contribution ou suggestion.
