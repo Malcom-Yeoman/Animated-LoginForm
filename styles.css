@@ -1,0 +1,85 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.form-container {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.form-panel {
+    display: none; 
+    padding: 20px;
+    background-color: #fff;
+}
+.active {
+    display: block;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.switch-btn {
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: underline;
+}
+/* Animation Fade + Slide */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.form-panel.entering,
+.form-panel.leaving {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.form-panel.entering.from-left {
+    animation-name: fadeInLeft;
+}
+.form-panel.entering.from-right {
+    animation-name: fadeInRight;
+}
+.form-panel.leaving.to-left {
+    animation-name: fadeInRight;
+}
+.form-panel.leaving.to-right {
+    animation-name: fadeInLeft;
+}
